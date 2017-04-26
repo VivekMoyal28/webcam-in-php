@@ -50,6 +50,3 @@ class webcamClass{
     
     
 }
-
-$webcamClass=new webcamClass();
-echo $webcamClass->showImage();
