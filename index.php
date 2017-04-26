@@ -37,7 +37,7 @@
 
     </div> <!-- /container -->
     <script language="JavaScript">
-        webcam.set_api_url( 'webcamClass.php' );
+        webcam.set_api_url( 'action.php' );
 	webcam.set_quality( 100 ); // JPEG quality (1 - 100)
 	webcam.set_shutter_sound( true ); // play shutter click sound
 	webcam.set_hook( 'onComplete', 'my_completion_handler' );
