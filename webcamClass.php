@@ -36,9 +36,9 @@ class webcamClass{
 //        $image=  $this->changeImagetoBase64($image);          //if you want to go for base64 encode than enable this line
         if($image){
             require_once( 'connectionClass.php' );
-            $dbcon=new connectionClass();
-            $insert="Insert into tablename (columnname) values('$image')";
-            $result=  mysqli_query($dbcon->con,$insert);
+            $mysqli=new connectionClass();
+            $query="Insert into snapshot (Image) values('$image')";
+            $result=  $mysqli->query($query);
             if($result){
                 return "Image saved to database";
             }
@@ -46,7 +46,5 @@ class webcamClass{
                 return "Image not saved to database";
             }
         }
-    }
-    
-    
+    }   
 }
